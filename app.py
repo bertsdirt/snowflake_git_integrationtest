@@ -4,8 +4,8 @@ from snowflake.snowpark import DataFrame
 from snowflake.snowpark.functions import col
 
 def hello(session: Session) -> DataFrame:
-    df = session.table("SFDB_SBOX.DSANDD01.KB_PRICE_COND")
-    return df
+    df = session.table("SFDB_SBOX.DSANDD01.KB_PRICE_COND")
+    return df
 # return df.filter(col("SAP_SLS_ORG_CD") == 2000)
 
 # For local debugging
