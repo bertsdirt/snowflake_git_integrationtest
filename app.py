@@ -10,10 +10,9 @@ def hello(session: Session) -> DataFrame:
 
 # For local debugging
 if __main__ == "__main__":
-    from snowflake.snowpark.mock.mock_connection import MockServerConnection
-    import init_local
+    from snowflake.snowpark.mock.mock_connection import MockServerConnection
+    import init_local
 
-    session = Session(MockServerConnection())
-    session = init_local.init(session)
-    print(hello(session).show())
-
+    session = Session(MockServerConnection())
+    session = init_local.init(session)
+    print(hello(session).show())
