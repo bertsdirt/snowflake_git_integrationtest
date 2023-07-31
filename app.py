@@ -9,7 +9,7 @@ def hello(session: Session) -> DataFrame:
 # return df.filter(col("SAP_SLS_ORG_CD") == 2000)
 
 # For local debugging
-if __main__ == "__main__":
+if __init__ == "__main__":
     from snowflake.snowpark.mock.mock_connection import MockServerConnection
     import init_local
 
